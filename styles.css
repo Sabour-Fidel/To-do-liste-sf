@@ -5,7 +5,7 @@ body {
     text-align: center;
 }
 
-input {
+input[type="text"] {
     padding: 5px;
     width: 70%;
 }
@@ -32,4 +32,25 @@ li {
     margin: 5px 0;
     padding: 10px;
     border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li span {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+li button {
+    background-color: #ff4444;
+}
+
+li button:hover {
+    background-color: #cc0000;
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: #888;
 }
